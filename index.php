@@ -14,8 +14,6 @@ require_once __DIR__ . '/partials/templates/head.php';?>
              <tr>
              <th>ID</th>
              <th>Room Number</th>
-             <th>Floor</th>
-             <th>Beds</th>
              </tr>
              </thead>
              <tbody>
@@ -25,8 +23,6 @@ require_once __DIR__ . '/partials/templates/head.php';?>
                 <tr>
                     <td class="text"><?php echo $stanza['id']; ?></td>
                     <td class="text"><?php echo $stanza['room_number']; ?></td>
-                    <td class="text"><?php echo $stanza['floor']; ?></td>
-                    <td class="text"><?php echo $stanza['beds']; ?></td>
                     <td class="text">
                         <a class="text-success" 
                             href="./show.php?id=<?php echo $stanza['id']; ?>">
