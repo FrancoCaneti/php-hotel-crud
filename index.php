@@ -1,20 +1,14 @@
-<?php 
-//connessione database
+<?php require_once __DIR__ . '/partials/script/get-stanze.php';?>
 
-$host = 'localhost';
-$username ='root';
-$password = 'root';
-$db_name = 'hotel';
+<!DOCTYPE html>
+<html lang="en">
+<?php
+require_once __DIR__ . '/partials/templates/head.php';?>
 
-//connection
-
-$con = new mysqli($host, $username, $password, $db_name);
-
-//check
-
-if ($conn && $conn->connected_error) {
-    die("Connected failed: $conn->connection_error");
-}
-
-
-?>
+<body>
+    
+    <main>
+    <h1>Stanze</h1>
+    </main>
+</body>
+</html>
