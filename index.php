@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PHP e MYSQL - Hotel stanze</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php 
+//connessione database
+
+$host = 'localhost';
+$username ='root';
+$password = 'root';
+$db_name = 'hotel';
+
+//connection
+
+$con = new mysqli($host, $username, $password, $db_name);
+
+//check
+
+if ($conn && $conn->connected_error) {
+    die("Connected failed: $conn->connection_error");
+}
+
+
+?>
